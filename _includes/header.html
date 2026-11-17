@@ -9,14 +9,6 @@
 {% endif %}
 
 <header class="site-header">
-  <a class="site-logo" href="{{ base | append: '/' | relative_url }}">{{ site.title }}</a>
-  <nav class="site-nav">
-    <a href="{{ base | append: '/' | relative_url }}">{{ t.nav.home }}</a>
-    <a href="{{ base | append: '/about.html' | relative_url }}">{{ t.nav.about }}</a>
-    <a href="{{ base | append: '/works.html' | relative_url }}">{{ t.nav.works }}</a>
-  </nav>
-  <a class="lang-switch" href="{{ other_url | relative_url }}">{{ t.switch_label }}</a>
-
   <div class="site-header-innor">
     <a class="site-logo" href="{{ base | append: '/' | relative_url }}">{{ site.title }}</a>
     <nav class="site-nav">
