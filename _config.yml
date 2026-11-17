@@ -1,0 +1,6 @@
+title: "Atelier Fazzy"
+url: "https://kuraputi99.github.io"
+baseurl: "/Atelier-Fazzy-R"
+
+exclude:
+  - README.md
