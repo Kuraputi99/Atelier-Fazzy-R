@@ -1,0 +1,15 @@
+- id: mc-ycce
+  category: minecraft
+  thumbnail: /assets/img/works/ycs.png
+  date: 2026-11-18
+  version: "0.1.0-β"
+  download: "..."
+  title:
+    ja: "Yellow Calmness Cat【Easy】"
+    en: "Yellow Calmness Cat【Easy】"
+  summary:
+    ja: "（短い説明は後で）"
+    en: "(Summary coming soon)"
+  platform:
+    ja: "Minecraft 統合版"
+    en: "Minecraft Bedrock Edition"

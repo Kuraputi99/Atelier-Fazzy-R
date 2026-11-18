@@ -2,6 +2,27 @@
 layout: default
 ---
 {% assign t = site.data[page.lang] %}
-<section class="works">
-  <h1>{{ t.title.works }}</h1>
-</section>
+{% assign w = site.data.works | where: "id", page.slug | first %}
+
+<article class="work-detail">
+  {% if w.thumbnail %}
+    <img class="work-detail-thumb" src="{{ w.thumbnail | relative_url }}" alt="">
+  {% endif %}
+
+  <h1>{{ w.title[page.lang] }}</h1>
+
+  <dl class="work-meta">
+    <dt>{{ t.work.category }}</dt><dd>{{ t.category[w.category] }}</dd>
+    <dt>{{ t.work.version }}</dt><dd>{{ w.version }}</dd>
+    <dt>{{ t.work.platform }}</dt><dd>{{ w.platform[page.lang] }}</dd>
+    <dt>{{ t.work.date }}</dt><dd>{{ w.date | date: "%Y-%m-%d" }}</dd>
+  </dl>
+
+  <div class="work-body">
+    {{ content }}
+  </div>
+
+  {% if w.download %}
+    <a class="work-download" href="{{ w.download }}">{{ t.work.download }}</a>
+  {% endif %}
+</article>

@@ -63,7 +63,7 @@ main {
 .site-nav {
   display: flex;
   gap: 20px;
-  margin-left: auto; /* ナビから右を右端に寄せる */
+  margin-left: auto;
 }
 
 .site-nav a {

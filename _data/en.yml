@@ -9,3 +9,15 @@ title:
   home: "Home"
   about: "About"
   works: "Works"
+
+category:
+  game: "Games"
+  tool: "Tools"
+  minecraft: "Minecraft Add-ons"
+
+work:
+  category: "Category"
+  version: "Version"
+  platform: "Platform"
+  date: "Released"
+  download: "Download"

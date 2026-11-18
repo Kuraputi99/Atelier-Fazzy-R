@@ -9,3 +9,15 @@ title:
   home: "ホーム"
   about: "アバウト"
   works: "ワーク"
+
+category:
+  game: "ゲーム"
+  tool: "ツール"
+  minecraft: "Minecraftアドオン"
+
+work:
+  category: "カテゴリ"
+  version: "バージョン"
+  platform: "対応環境"
+  date: "公開日"
+  download: "ダウンロード"

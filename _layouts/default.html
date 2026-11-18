@@ -5,16 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% assign t = site.data[page.lang] %}
         <title>{{ t.title[page.page_key] }} | {{ site.title }}</title>
+
+        <!-- 共通用とページキー別のcssを呼び出す -->
         <link rel="stylesheet" href="{{ '/assets/css/common.css' | relative_url }}">
         <link rel="stylesheet" href="{{ '/assets/css/' | append: page.page_key | append: '.css' | relative_url }}">
     </head>
 
     <body>
+        <!-- ヘッダを読み込む -->
         {% include header.html %}
+
+        <!-- メインコンテンツ -->
         <main>
             {{ content }}
         </main>
+
+        <!-- フッタを読み込む -->
         {% include footer.html %}
+
+        <!-- 共通用のjsを呼び出す -->
         <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
     </body>
 </html>
