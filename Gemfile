@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+# jekyllのバージョンを固定
+gem "jekyll", "~> 4.4"
 
-gem "webrick"
-
+# タイムゾーンのデータを入れる
 platforms :windows do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
