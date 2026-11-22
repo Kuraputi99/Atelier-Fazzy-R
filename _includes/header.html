@@ -1,0 +1,26 @@
+{% assign t = site.data[page.lang] %}
+
+{% if page.lang == "en" %}
+{% assign base = "/en" %}
+{% assign other_url = page.url | remove_first: "/en" %}
+{% else %}
+{% assign base = "" %}
+{% assign other_url = "/en" | append: page.url %}
+{% endif %}
+
+<header class="site-header">
+    <div class="site-header-inner">
+        <a class="site-logo" href="{{ base | append: '/' | relative_url }}">{{ site.title }}</a>
+
+        <nav class="site-nav">
+            {% for item in site.data.navigation %}
+            <a href="{{ base | append: item.link | relative_url }}" {% if page.page_key==item.key %}aria-current="page"
+                {% endif %}>
+                {{ t.nav[item.key] }}
+            </a>
+            {% endfor %}
+        </nav>
+
+        <a class="lang-switch" href="{{ other_url | relative_url }}">{{ t.switch_label }}</a>
+    </div>
+</header>

@@ -1,6 +1,5 @@
 ---
-layout: default
-title: About
+page_key: about
 ---
 
 # Aboutページ

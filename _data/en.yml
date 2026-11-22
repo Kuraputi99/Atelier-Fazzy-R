@@ -1,0 +1,11 @@
+switch_label: "日本語"
+
+nav:
+  home: "Home"
+  about: "About"
+  works: "Works"
+
+title:
+  home: "Home"
+  about: "About"
+  works: "Works"

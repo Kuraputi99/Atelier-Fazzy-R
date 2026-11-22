@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="{{ page.lang }}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ page.title }}</title>
+        {% assign t = site.data[page.lang] %}
+        {% if page.page_key %}
+            <title>{{ t.title[page.page_key] }} | {{ site.title }}</title>
+        {% else %}
+            <title>{{ page.title }} | {{ site.title }}</title>
+        {% endif %}
         <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     </head>
     <body>
-        {% include navigation.html %}
-        {{ content }}
+        {% include header.html %}
+        <main>
+            {{ content }}
+        </main>
+        {% include footer.html %}
     </body>
 </html>

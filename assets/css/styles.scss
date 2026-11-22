@@ -1,5 +1,7 @@
 ---
-# Jekyllを使用するためにフロントマターを記載
+# JekyllにSCSSを変換させるためのFront Matter
 ---
 
-@use "main";
+@use "base";
+@use "header";
+@use "footer";

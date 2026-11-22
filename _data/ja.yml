@@ -1,0 +1,11 @@
+switch_label: "English"
+
+nav:
+  home: "ホーム"
+  about: "アバウト"
+  works: "ワーク"
+
+title:
+  home: "ホーム"
+  about: "アバウト"
+  works: "ワーク"

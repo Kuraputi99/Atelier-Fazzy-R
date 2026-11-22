@@ -21,3 +21,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+      lang: "ja"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"

@@ -1,0 +1,69 @@
+.site-header {
+    background: var(--surface);
+    border-bottom: 4px solid var(--border-stronger);
+}
+
+.site-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 16px 20px;
+}
+
+.site-logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.site-nav {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    /* ナビから右を右端に寄せる */
+}
+
+.site-nav a {
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+    color: var(--accent-light);
+}
+
+.site-nav a[aria-current="page"] {
+    border-bottom-color: var(--accent-light);
+}
+
+.lang-switch {
+    padding: 4px 12px;
+    border: 2px solid var(--border-stronger);
+    background: var(--surface);
+}
+
+.lang-switch:hover {
+    background: var(--accent-light);
+    color: var(--accent-text);
+}
+
+/* スマホ（幅600px以下）：ロゴと言語切替を1段目、ナビを2段目に */
+@media (max-width: 600px) {
+    .site-header-inner {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .lang-switch {
+        margin-left: auto;
+    }
+
+    .site-nav {
+        order: 3;
+        /* HTMLの順番は変えずに、表示だけ最後に回す */
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-around;
+    }
+}

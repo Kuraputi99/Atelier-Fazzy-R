@@ -1,0 +1,42 @@
+/* ========== 色・共通の値（前の Atelier Fazzy の配色） ========== */
+:root {
+    --bg: #f1efe8;
+    --surface: #ffffff;
+    --surface-2: #e9e7de;
+    --border: #b4b2a9;
+    --border-strong: #5f5e5a;
+    --border-stronger: #2c2c2a;
+    --text: #2c2c2a;
+    --text-secondary: #5f5e5a;
+    --text-muted: #888780;
+    --accent-light: #1D9E75;
+    --accent-text: #04342c;
+
+    --content-width: 960px;
+    --font-body: system-ui, sans-serif;
+    /* フォントは後で差し替え */
+}
+
+/* ========== 全体 ========== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 24px 20px;
+}
