@@ -9,3 +9,16 @@ title:
   home: "Home"
   about: "About"
   works: "Works"
+
+category:
+  game: "Games"
+  tool: "Tools"
+  mc-bedrock: "Minecraft Bedrock Edition"
+
+work:
+  category: "Category"
+  version: "Version"
+  platform: "Platform"
+  date: "Released"
+  download: "Download"
+  back: "Back to Works"

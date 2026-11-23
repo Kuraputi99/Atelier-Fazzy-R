@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% assign t = site.data[page.lang] %}
-        {% if page.page_key %}
+        {% if page.collection == "works" %}
+            {% assign w = site.data.works | where: "id", page.slug | first %}
+            <title>{{ w.title[page.lang] }} | {{ site.title }}</title>
+        {% elsif page.page_key %}
             <title>{{ t.title[page.page_key] }} | {{ site.title }}</title>
         {% else %}
             <title>{{ page.title }} | {{ site.title }}</title>

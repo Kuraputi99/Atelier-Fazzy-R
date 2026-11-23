@@ -1,0 +1,24 @@
+# id       : カードID
+# category : カテゴリー
+# date     : 更新日
+# version  : カードのバージョン
+# download : ダウンロードリンク
+# title    : カードのタイトル名
+# summary  : カードに表示する短い説明
+# platform : 稼働可能な機種/ゲーム
+
+- id: ycs
+  category: mc-bedrock
+  thumbnail: /assets/images/works/ycs.png
+  date: 2026-11-18
+  version: "1.0.0-b1"
+  download: ""
+  title:
+    ja: "Yellow Calmness Shining"
+    en: "Yellow Calmness Shining"
+  summary:
+    ja: "（短い説明は後で）"
+    en: "(Summary coming soon)"
+  platform:
+    ja: "統合版マインクラフト"
+    en: "Minecraft Bedrock Edition"

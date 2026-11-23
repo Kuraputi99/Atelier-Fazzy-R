@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% assign t = site.data[page.lang] %}
+{% if page.lang == "en" %}{% assign base = "/en" %}{% else %}{% assign base = "" %}{% endif %}
+{% assign work_list = site.data.works | sort: "date" | reverse %}
+
+<section class="works">
+    <h1>{{ t.title.works }}</h1>
+
+    <ul class="works-list">
+        {% for w in work_list %}
+        <li class="work-card">
+            <a href="{{ base | append: '/works/' | append: w.id | append: '.html' | relative_url }}">
+                {% if w.thumbnail %}
+                <img src="{{ w.thumbnail | relative_url }}" alt="">
+                {% endif %}
+                <h2>{{ w.title[page.lang] }}</h2>
+                <p class="work-card-category">{{ t.category[w.category] }}</p>
+                <p>{{ w.summary[page.lang] }}</p>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

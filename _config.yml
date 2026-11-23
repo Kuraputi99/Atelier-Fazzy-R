@@ -5,6 +5,8 @@ baseurl: "/Atelier-Fazzy-R"
 collections:
   authors:
     output: true
+  works:
+    output: true
 
 defaults:
   - scope:
@@ -26,3 +28,19 @@ defaults:
       path: "en"
     values:
       lang: "en"
+  - scope:
+      path: "_works/ja"
+      type: "works"
+    values:
+      layout: "work"
+      lang: "ja"
+      page_key: "works"
+      permalink: /works/:name.html
+  - scope:
+      path: "_works/en"
+      type: "works"
+    values:
+      layout: "work"
+      lang: "en"
+      page_key: "works"
+      permalink: /en/works/:name.html
