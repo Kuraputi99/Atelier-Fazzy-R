@@ -14,8 +14,7 @@
 
         <nav class="site-nav">
             {% for item in site.data.navigation %}
-            <a href="{{ base | append: item.link | relative_url }}" {% if page.page_key==item.key %}aria-current="page"
-                {% endif %}>
+            <a href="{{ base | append: item.link | relative_url }}" {% if page.page_key == item.key %}aria-current="page"{% endif %}>
                 {{ t.nav[item.key] }}
             </a>
             {% endfor %}

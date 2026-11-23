@@ -7,7 +7,7 @@
 # summary  : カードに表示する短い説明
 # platform : 稼働可能な機種/ゲーム
 
-- id: ycs
+- id: mc_b-ycs
   category: mc-bedrock
   thumbnail: /assets/images/works/ycs.png
   date: 2026-11-18
