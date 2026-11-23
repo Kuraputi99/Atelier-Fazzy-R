@@ -2,6 +2,9 @@ title: "Atelier Fazzy"
 url: "https://kuraputi99.github.io"
 baseurl: "/Atelier-Fazzy-R"
 
+# YouTubeのチャンネルID
+youtube_channel_id: "UC-mWhesUUEVexzr5KWeJJbA"
+
 collections:
   authors:
     output: true

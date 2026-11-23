@@ -1,20 +1,31 @@
+# ーーーーーーーーーー
+# 
+# 翻訳（日本語）
+# 
+# ーーーーーーーーーー
+
+# 言語切り替えボタン
 switch_label: "English"
 
+# ヘッダのページ名
 nav:
-  home: "ホーム"
-  about: "アバウト"
-  works: "ワーク"
+  home: "HOME"
+  about: "ABOUT"
+  works: "WORKS"
 
+# タイトルのページ名
 title:
-  home: "ホーム"
-  about: "アバウト"
-  works: "ワーク"
+  home: "HOME"
+  about: "ABOUT"
+  works: "WORKS"
 
+# カテゴリ名
 category:
   game: "ゲーム"
   tool: "ツール"
   mc-bedrock: "統合版マインクラフト"
 
+# 作業カードの情報
 work:
   category: "カテゴリ"
   version: "バージョン"
@@ -22,3 +33,10 @@ work:
   date: "公開日"
   download: "ダウンロード"
   back: "ワーク一覧へ戻る"
+
+# ホーム画面の情報
+home:
+  welcome: "じゆうきままに 愉しみをかくさん"
+  news_title: "おしらせ"
+  news_empty: "お知らせはまだないよ..."
+  youtube_title: "最新の動画"

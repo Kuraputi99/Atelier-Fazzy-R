@@ -1,20 +1,31 @@
+# ーーーーーーーーーー
+# 
+# 翻訳（英語）
+# 
+# ーーーーーーーーーー
+
+# 言語切り替えボタン
 switch_label: "日本語"
 
+# ヘッダのページ名
 nav:
-  home: "Home"
-  about: "About"
-  works: "Works"
+  home: "HOME"
+  about: "ABOUT"
+  works: "WORKS"
 
+# タイトルのページ名
 title:
-  home: "Home"
-  about: "About"
-  works: "Works"
+  home: "HOME"
+  about: "ABOUT"
+  works: "WORKS"
 
+# カテゴリ名
 category:
   game: "Games"
   tool: "Tools"
   mc-bedrock: "Minecraft Bedrock Edition"
 
+# 作業カードの情報
 work:
   category: "Category"
   version: "Version"
@@ -22,3 +33,10 @@ work:
   date: "Released"
   download: "Download"
   back: "Back to Works"
+  
+# ホーム画面の情報
+home:
+  welcome: "Enjoy Freely, Spread the Joy"
+  news_title: "News"
+  news_empty: "No news yet..."
+  youtube_title: "Latest videos"

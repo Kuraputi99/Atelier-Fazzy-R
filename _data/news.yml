@@ -1,0 +1,19 @@
+# ーーーーーーーーーー
+# 
+# ニュースの情報
+# 
+# date    : 日付
+# text-ja : 本文（日本語）
+# text-en : 本文（英語）
+# 
+# ーーーーーーーーーー
+
+- date: 2026-11-23
+  text:
+    ja: "サイトをリニューアルしました"
+    en: "Our website has been renewed"
+
+- date: 2026-11-23
+  text:
+    ja: "[MC_B-YCS] Yellow Calmness Shining β1 を公開しました"
+    en: "[MC_B-YCS] Released Yellow Calmness Shining β1"

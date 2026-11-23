@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{% assign t = site.data[page.lang] %}
+{% if page.lang == "en" %}{% assign base = "/en" %}{% else %}{% assign base = "" %}{% endif %}
+{% assign news_list = site.data.news | sort: "date" | reverse %}
+
+<!-- ウェルカムメッセージ -->
+<section class="home-hero">
+    <h1>{{ site.title }}</h1>
+    <p>{{ t.home.welcome }}</p>
+</section>
+
+<!-- ニュース -->
+<section class="home-section">
+    <h2>{{ t.home.news_title }}</h2>
+    {% if news_list.size > 0 %}
+    <ul class="news-list">
+        {% for n in news_list limit: 5 %}
+        <li>
+            <time datetime="{{ n.date | date: '%Y-%m-%d' }}">{{ n.date | date: "%Y.%m.%d" }}</time>
+            <span>{{ n.text[page.lang] }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="home-empty">{{ t.home.news_empty }}</p>
+    {% endif %}
+</section>
+
+<!-- YouTubeの最新動画 -->
+{% if site.youtube_channel_id != "" %}
+{% assign uploads_id = site.youtube_channel_id | replace_first: "UC", "UU" %}
+<section class="home-section">
+    <h2>{{ t.home.youtube_title }}</h2>
+    <div class="youtube-embed">
+        <iframe src="https://www.youtube.com/embed/videoseries?list={{ uploads_id }}" title="YouTube" loading="lazy"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+{% endif %}
