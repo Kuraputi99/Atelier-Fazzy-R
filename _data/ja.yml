@@ -19,15 +19,20 @@ title:
   about: "ABOUT"
   works: "WORKS"
 
-# カテゴリ名
-category:
-  game: "ゲーム"
-  tool: "ツール"
+# タグの表示名
+tags:
+  mc-java:    "Java版マインクラフト"
   mc-bedrock: "統合版マインクラフト"
+  mod:        "Mod"
+  addon:      "アドオン"
+  game:       "ゲーム"
+  tool:       "ツール"
+  flashiness: "ド派手"
+  inflation:  "インフレ"
 
 # 作業カードの情報
 work:
-  category: "カテゴリ"
+  tags: "タグ"
   version: "バージョン"
   platform: "対応環境"
   date: "公開日"

@@ -19,15 +19,20 @@ title:
   about: "ABOUT"
   works: "WORKS"
 
-# カテゴリ名
-category:
-  game: "Games"
-  tool: "Tools"
-  mc-bedrock: "Minecraft Bedrock Edition"
+# タグの表示名
+tags:
+  mc-java:    "Minecraft"
+  mc-bedrock: "Minecraft BE"
+  mod:        "Mod"
+  addon:      "Addon"
+  game:       "Game"
+  tool:       "Tool"
+  flashiness: "Flashiness"
+  inflation:  "Inflation"
 
 # 作業カードの情報
 work:
-  category: "Category"
+  tags: "Tags"
   version: "Version"
   platform: "Platform"
   date: "Released"

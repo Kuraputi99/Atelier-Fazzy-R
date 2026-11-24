@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% comment %}
+#
+# 
+#
+{% endcomment %}
+
 {% assign t = site.data[page.lang] %}
 {% assign w = site.data.works | where: "id", page.slug | first %}
 {% if page.lang == "en" %}{% assign base = "/en" %}{% else %}{% assign base = "" %}{% endif %}
@@ -14,8 +20,14 @@ layout: default
     <h1>{{ w.title[page.lang] }}</h1>
 
     <dl class="work-meta">
-        <dt>{{ t.work.category }}</dt>
-        <dd>{{ t.category[w.category] }}</dd>
+        <dt>{{ t.work.tags }}</dt>
+        <dd>
+            <ul class="work-tags">
+                {% for tag in w.tags %}
+                <li>{{ t.tags[tag] | default: tag }}</li>
+                {% endfor %}
+            </ul>
+        </dd>
         <dt>{{ t.work.version }}</dt>
         <dd>{{ w.version }}</dd>
         <dt>{{ t.work.platform }}</dt>

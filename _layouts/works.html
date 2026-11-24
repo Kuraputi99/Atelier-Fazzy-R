@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% comment %}
+#
+# 
+#
+{% endcomment %}
+
 {% assign t = site.data[page.lang] %}
 {% if page.lang == "en" %}{% assign base = "/en" %}{% else %}{% assign base = "" %}{% endif %}
 {% assign work_list = site.data.works | sort: "date" | reverse %}
@@ -11,13 +17,17 @@ layout: default
 
     <ul class="works-list">
         {% for w in work_list %}
-        <li class="work-card">
+        <li class="work-card" data-tags="{{ w.tags | join: ' ' }}">
             <a href="{{ base | append: '/works/' | append: w.id | append: '.html' | relative_url }}">
                 {% if w.thumbnail %}
                 <img src="{{ w.thumbnail | relative_url }}" alt="">
                 {% endif %}
                 <h2>{{ w.title[page.lang] }}</h2>
-                <p class="work-card-category">{{ t.category[w.category] }}</p>
+                <ul class="work-tags">
+                    {% for tag in w.tags %}
+                    <li>{{ t.tags[tag] | default: tag }}</li>
+                    {% endfor %}
+                </ul>
                 <p>{{ w.summary[page.lang] }}</p>
             </a>
         </li>

@@ -3,7 +3,7 @@
 # 作業カードの情報
 # 
 # id        : カードID
-# category  : カテゴリー
+# tags      : タグ（複数選択可）
 # thumbnail : サムネイル画像
 # date      : 更新日
 # version   : カードのバージョン
@@ -14,18 +14,50 @@
 #
 # ーーーーーーーーーー
 
-- id: mc_b-ycs
-  category: mc-bedrock
+- id: mc-bedrock-ycs
+  tags: [ mc-bedrock, addon, flashiness, inflation ]
   thumbnail: /assets/images/works/ycs.png
   date: 2026-11-23
   version: "4.0b1"
-  download: ""
+  download: "WIP"
   title:
     ja: "Yellow Calmness Shining"
     en: "Yellow Calmness Shining"
   summary:
-    ja: "複数形態ありの一押しモブ"
-    en: "Featured Mob with Multiple Forms"
+    ja: "黄金に煌めく猫を追加"
+    en: "Add a Cat That Shimmers in Gold"
   platform:
     ja: "統合版マインクラフト"
     en: "Minecraft Bedrock Edition"
+
+- id: mc-bedrock-scarlet-barrage
+  tags: [ mc-bedrock, addon, flashiness ]
+  thumbnail: /assets/images/no_picture.png
+  date: 2026-11-25
+  version: "2.1.0a"
+  download: "WIP"
+  title:
+    ja: "Scarlet Barrage"
+    en: "Scarlet Barrage"
+  summary:
+    ja: "緋色の悪魔を追加"
+    en: "Add a the Scarlet Devil"
+  platform:
+    ja: "統合版マインクラフト"
+    en: "Minecraft Bedrock Edition"
+
+- id: tool-aflib-dx12
+  tags: [ tool ]
+  thumbnail: /assets/images/no_picture.png
+  date: 2026-11-25
+  version: "1.0.0a"
+  download: "WIP"
+  title:
+    ja: "AFLib DX12"
+    en: "AFLib DX12"
+  summary:
+    ja: "DirectX12を使用したC++でのゲーム開発用ライブラリ"
+    en: "C++ library for game development using DirectX 12"
+  platform:
+    ja: "Windows 10, 11"
+    en: "Windows 10, 11"

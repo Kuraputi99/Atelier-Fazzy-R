@@ -1,8 +1,15 @@
 ---
 layout: default
 ---
+
+{% comment %}
+#
+# ホームページ
+#
+{% endcomment %}
+
 {% assign t = site.data[page.lang] %}
-{% if page.lang == "en" %}{% assign base = "/en" %}{% else %}{% assign base = "" %}{% endif %}
+
 {% assign news_list = site.data.news | sort: "date" | reverse %}
 
 <!-- ウェルカムメッセージ -->
