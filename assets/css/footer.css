@@ -1,0 +1,13 @@
+/*ーーーーーーーーーー
+#
+# フッタ部分（共通）のデザイン
+#
+ーーーーーーーーーー*/
+
+/*-フッタ全体のデザイン-*/
+.site-footer {
+    padding: 24px 20px;
+    text-align: center;
+    color: var(--text-muted);
+    border-top: 2px solid var(--border);
+}

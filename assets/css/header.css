@@ -1,3 +1,10 @@
+/*ーーーーーーーーーー
+#
+# ヘッダ部分（共通）のデザイン
+#
+ーーーーーーーーーー*/
+
+/*-ヘッダ全体のデザイン-*/
 .site-header {
     background: var(--surface);
     border-bottom: 4px solid var(--border-stronger);

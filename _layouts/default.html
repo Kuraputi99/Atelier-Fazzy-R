@@ -12,7 +12,11 @@
         {% else %}
             <title>{{ page.title }} | {{ site.title }}</title>
         {% endif %}
-        <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/works.css' | relative_url }}">
     </head>
     <body>
         {% include header.html %}
