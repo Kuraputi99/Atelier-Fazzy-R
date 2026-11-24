@@ -6,22 +6,10 @@ baseurl: "/Atelier-Fazzy-R"
 youtube_channel_id: "UC-mWhesUUEVexzr5KWeJJbA"
 
 collections:
-  authors:
-    output: true
   works:
     output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
   - scope:
       path: ""
     values:
