@@ -18,7 +18,7 @@ layout: default
     <p>{{ t.home.welcome }}</p>
 </section>
 
-<!-- ニュース -->
+<!-- ニュースセクション -->
 <section class="home-section">
     <h2>{{ t.home.news_title }}</h2>
     {% if news_list.size > 0 %}
@@ -35,14 +35,11 @@ layout: default
     {% endif %}
 </section>
 
-<!-- YouTubeの最新動画 -->
-{% if site.youtube_channel_id != "" %}
+<!-- YouTubeにアップロード済みの動画の再生リストから最新のものを添付 -->
 {% assign uploads_id = site.youtube_channel_id | replace_first: "UC", "UU" %}
 <section class="home-section">
     <h2>{{ t.home.youtube_title }}</h2>
     <div class="youtube-embed">
-        <iframe src="https://www.youtube.com/embed/videoseries?list={{ uploads_id }}" title="YouTube" loading="lazy"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/videoseries?list={{ uploads_id }}" title="YouTube" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </section>
-{% endif %}
